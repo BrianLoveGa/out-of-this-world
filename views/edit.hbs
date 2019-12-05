@@ -1,0 +1,19 @@
+<h3>Add a Resturant to our list or edit an exising one:</h3>
+<div class="space">
+<form name="form1" action="/{{id}}?_method=put" method="POST">
+    <label for="name">Name of Resturant</label>
+    <input type="text" name="name" value="{{name}}">
+    <label for="owner">Owner's Name</label>
+    <input type="text" name="owner" value="{{owner}}">
+    <label for "type">Type of Food Served</label> 
+    <input type="text" name="type" value="{{type}}">
+    <label for="capacity">Max Capacity </label>
+    <input id="short" type="text" name="capacity" value="{{capacity}}">
+    <input class="button" type="submit" value="Update">
+
+</form>
+</div>
+<h3> Click the delete button below to permanently remove a listing .</h3>
+<form action="/{{id}}?_method=delete" method="post">
+    <input class="button delete" type="submit" value="Delete">
+</form>

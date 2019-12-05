@@ -1,0 +1,9 @@
+<h2> Click a resturant name below - or add a returant up top</h2>
+
+
+<ul class='list-view'>
+    {{#each rests}}
+    <li><i class="fas fa-space-shuttle fa-xs"></i><a href="/{{this.id}}">{{this.name}}</a></li>
+    {{/each}}
+</ul>
+

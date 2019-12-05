@@ -1,0 +1,204 @@
+@import url('https://kit-free.fontawesome.com/releases/latest/css/free.min.css');
+
+
+  /* wanted to have random backgrounds got it working but with the cost of causing major errors to crud */
+/* background: url(https://c.pxhere.com/photos/1a/9d/stars_background_blue_photoshop_color_space_sky_dark-610854.jpg!d); */
+/* (https://cdn5.vectorstock.com/i/1000x1000/43/69/pattern-with-pink-stars-on-dark-sky-background-vector-24544369.jpg) */
+
+body {
+    background-image: url("https://cdn.cnn.com/cnnnext/dam/assets/150103074330-hubble-space-background-2-full-169.jpg");
+    color: rgb(230, 230, 230);
+    display: flex;
+    flex-direction: column;
+    padding: 0 2%;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+label {
+    margin: 15px 0 ;
+    color:black;
+    font-size: 25px;
+    background-color: beige;
+    padding:10px;
+    border-radius: 5px;
+    text-align: center;
+    
+}
+
+input{
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 15px;
+}
+.delete{
+    margin: 20px;
+}
+
+h1 {
+    display: inline-block;
+    letter-spacing: 5px;
+    color: rgb(255, 255, 255);
+    font-size: 38px;
+    text-decoration: white underline overline double; 
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 10px 0;
+    font-size: 1.35em;
+    font-weight: 700;
+    padding: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(211, 122, 6);
+    background-color: black;
+    font-size: 25px;
+}
+
+nav ul li a:hover {
+    color: rgb(222, 219, 241);
+    background-color: rgb(172, 6, 6);
+    font-size: 28px;
+}
+
+nav ul li a:active {
+    color: rgb(32, 134, 18);
+    background-color: dimgrey;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+    justify-content: space-around;
+    padding:10px;
+}
+
+.list-view  {
+    line-height: 2em;
+    list-style-type: none;
+    padding-left: 20px;
+    font-size: 35px;
+    text-decoration: none;
+}
+
+.list-view a {
+    text-decoration: none;
+    color: floralwhite;
+}
+
+i.fas {
+  border: 2px dotted rgba(242, 248, 250, 0.747);
+  padding:5px;
+  margin: 15px;
+}
+
+.list-view a:hover {
+    text-decoration: none;
+    background-color: aliceblue;
+    color: darkmagenta;
+    border-radius: 10px;
+    padding:5px;
+    margin:10px;
+}
+
+h2{
+    font-size:35px;
+    color: honeydew;
+}
+h3 {
+    font-size: 25px;
+}
+
+.button  {
+    font-size: 20px;
+    background-color: violet;
+    color: black;
+    border-radius: 10px;
+    width: 250px;
+    padding: 10px;
+    margin: 30px;
+}
+
+.button:hover {
+    font-size: 24px;
+    background-color: rgb(241, 92, 241);
+    color: black;
+    border-radius: 10px;
+    width: 255px;
+    padding: 11px;
+    margin: 33px;
+}
+ /* all i can see for small screen problems so far */
+@media (max-width: 610px){
+    h1 {
+        text-decoration: none;
+    }
+    footer{
+        z-index: -1;
+    }
+}
+
+/* // make footer button wobble this is cool - thanks youtube and reddit! */
+
+@keyframes wobble{
+    0%,100%{
+        transform: none;
+    }
+    20%{
+        transform: skew(-12.5deg, -12.5deg);
+    }
+    40%{
+        transform: skew(6.25deg, 6.25deg);
+    }
+    60%{
+        transform: skew(-3.12deg, -3.12deg);
+    }
+    80%{
+        transform: skew(1.5deg, 1.5deg);
+    }
+}
+
+.fLink {
+    color: rgb(65, 250, 9);
+    background-color: darkmagenta;
+    border-radius: 10px;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+.fLink:hover{
+    transform: none;
+    animation: .8s wobble ease-in-out both;
+}
+
+
+footer {
+    margin: 5% 25px;
+    font-size: 18px;
+    position: absolute;
+    bottom: 0;
+    right:0;
+}
+
+footer:hover {
+    transform: none;
+    animation: .8s wobble ease-in-out both;
+}
+
+
+.dev {
+    padding: 10px;
+    margin: 15px;
+    background-color: black;
+    color: whitesmoke;
+    border-radius: 5px;
+    border: 2px dashed whitesmoke;
+}

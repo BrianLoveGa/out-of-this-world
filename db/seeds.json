@@ -1,0 +1,53 @@
+[
+    {
+    "name": "Bob's Burgers",
+    "owner": "Bob Belcher", 
+    "type": "Burgers - BOD Combo -  recommended burger of the day with fries",
+    "capacity": 38
+},
+
+{
+    "name" : "Cheers",
+    "owner" : "Samuel 'Mayday' Malone",
+    "type" : "Bar and Grill",
+    "capacity": 105
+},
+
+{
+    "name": "Moe's Tavern",
+    "owner": "Moe Szyslak ",
+    "type": "Tavern - with cold Duff beer and terrible food",
+    "capacity": 67
+
+},
+
+{
+    "name":"Paddy's Irish Pub",
+    "owner": "Frank Reynolds aka 'The Warthog'",
+    "type": "Irish Pub - serving grilled charlie's and milk steak",
+    "capacity": 80
+}
+
+]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
